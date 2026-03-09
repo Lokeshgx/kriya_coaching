@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="prof6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899;"/>
+      <stop offset="100%" style="stop-color:#db2777;"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <circle cx="150" cy="150" r="150" fill="url(#prof6)"/>
+  <!-- Head -->
+  <circle cx="150" cy="90" r="42" fill="#f9dcc4"/>
+  <!-- Hair (short and neat) -->
+  <ellipse cx="150" cy="52" rx="50" ry="32" fill="#3d2817"/>
+  <!-- Hair highlights -->
+  <path d="M 120 65 Q 130 50 140 60" fill="none" stroke="#4a3526" stroke-width="3" opacity="0.5"/>
+  <!-- Eyes -->
+  <circle cx="135" cy="85" r="4" fill="#1f2937"/>
+  <circle cx="165" cy="85" r="4" fill="#1f2937"/>
+  <!-- Eyesparkle -->
+  <circle cx="137" cy="83" r="1.5" fill="#ffffff"/>
+  <circle cx="167" cy="83" r="1.5" fill="#ffffff"/>
+  <!-- Eyebrows (feminine arch) -->
+  <path d="M 128 73 Q 135 70 142 73" fill="none" stroke="#3d2817" stroke-width="2"/>
+  <path d="M 158 73 Q 165 70 172 73" fill="none" stroke="#3d2817" stroke-width="2"/>
+  <!-- Nose -->
+  <line x1="150" y1="85" x2="150" y2="100" stroke="#e8bba9" stroke-width="1.5"/>
+  <!-- Rosy cheeks -->
+  <circle cx="120" cy="100" r="8" fill="#ffb3ba" opacity="0.4"/>
+  <circle cx="180" cy="100" r="8" fill="#ffb3ba" opacity="0.4"/>
+  <!-- Smile -->
+  <path d="M 138 108 Q 150 115 162 108" fill="none" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+  <!-- Body (business casual) -->
+  <rect x="105" y="135" width="90" height="105" fill="#ec4899" rx="8"/>
+  <!-- Sweater/Top -->
+  <rect x="120" y="155" width="60" height="85" fill="#ffffff" rx="5"/>
+  <circle cx="150" cy="175" r="6" fill="#ec4899"/>
+  <!-- Arms -->
+  <ellipse cx="95" cy="170" rx="18" ry="55" fill="#f9dcc4" transform="rotate(-20 95 170)"/>
+  <ellipse cx="205" cy="170" rx="18" ry="55" fill="#f9dcc4" transform="rotate(20 205 170)"/>
+</svg>

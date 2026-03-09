@@ -1,0 +1,242 @@
+/* ===== FACULTY PAGE STYLES ===== */
+
+/* Faculty Page Section */
+.faculty-page-section {
+    padding: 5rem 0;
+}
+
+/* Faculty Grid */
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+/* Faculty Card */
+.faculty-card {
+    background: white;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}
+
+.faculty-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Faculty Image */
+.faculty-image {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.faculty-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.faculty-card:hover .faculty-image img {
+    transform: scale(1.05);
+}
+
+/* Faculty Overlay */
+.faculty-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(37, 99, 235, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.faculty-card:hover .faculty-overlay {
+    opacity: 1;
+}
+
+/* Social Links in Overlay */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Faculty Info */
+.faculty-info {
+    padding: 2rem;
+}
+
+.faculty-info h4 {
+    color: var(--text-dark);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.faculty-info .subject {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+/* Qualifications Badges */
+.qualifications {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.qualifications .badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.75rem;
+    font-weight: 600;
+}
+
+.badge.bg-pink {
+    background-color: #ec4899 !important;
+}
+
+/* Faculty Description */
+.faculty-info .description {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Faculty CTA Section */
+.faculty-cta {
+    padding: 4rem 0;
+    margin-top: 3rem;
+}
+
+.faculty-cta h2 {
+    color: var(--text-dark);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.faculty-cta p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.faculty-cta .btn {
+    transition: all 0.3s ease;
+}
+
+.faculty-cta .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faculty-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+
+    .faculty-page-section {
+        padding: 3rem 0;
+    }
+
+    .faculty-image {
+        height: 250px;
+    }
+
+    .faculty-info {
+        padding: 1.5rem;
+    }
+
+    .faculty-info h4 {
+        font-size: 1.1rem;
+    }
+
+    .faculty-cta h2 {
+        font-size: 1.75rem;
+    }
+
+    .faculty-cta p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .faculty-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .faculty-image {
+        height: 200px;
+    }
+
+    .faculty-info {
+        padding: 1.25rem;
+    }
+
+    .faculty-info h4 {
+        font-size: 1rem;
+    }
+
+    .faculty-info .subject {
+        font-size: 0.85rem;
+    }
+
+    .faculty-info .description {
+        font-size: 0.85rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+
+    .social-links a {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    .qualifications .badge {
+        font-size: 0.7rem;
+    }
+
+    .faculty-cta {
+        padding: 3rem 0;
+    }
+
+    .faculty-cta h2 {
+        font-size: 1.5rem;
+    }
+}

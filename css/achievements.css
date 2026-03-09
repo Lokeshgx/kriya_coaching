@@ -1,0 +1,65 @@
+/* Achievements Page Styles */
+.achievements-section {
+    padding: 5rem 0;
+}
+
+.achievement-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2.5rem;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.achievement-card h3 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.achievement-card p {
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+.merit-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.merit-item {
+    background: var(--light-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.merit-item .rank {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.merit-item .name {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.merit-item .percentage {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.breadcrumb-section {
+    background-color: var(--light-color);
+    padding: 2rem 0;
+}

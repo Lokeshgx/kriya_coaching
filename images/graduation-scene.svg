@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="celebBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff59d;"/>
+      <stop offset="100%" style="stop-color:#ffeb3b;"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#celebBg)"/>
+  <!-- Confetti -->
+  <rect x="50" y="30" width="8" height="8" fill="#ff6b6b" opacity="0.6" transform="rotate(45 54 34)"/>
+  <rect x="120" y="50" width="8" height="8" fill="#4ecdc4" opacity="0.6" transform="rotate(30 124 54)"/>
+  <rect x="200" y="40" width="8" height="8" fill="#ff9ff3" opacity="0.6" transform="rotate(60 204 44)"/>
+  <rect x="300" y="60" width="8" height="8" fill="#54a0ff" opacity="0.6" transform="rotate(45 304 64)"/>
+  <rect x="400" y="30" width="8" height="8" fill="#48dbfb" opacity="0.6" transform="rotate(30 404 34)"/>
+  <rect x="500" y="50" width="8" height="8" fill="#ff6348" opacity="0.6" transform="rotate(60 504 54)"/>
+  <rect x="600" y="40" width="8" height="8" fill="#1dd1a1" opacity="0.6" transform="rotate(45 604 44)"/>
+  <rect x="700" y="70" width="8" height="8" fill="#ffa502" opacity="0.6" transform="rotate(30 704 74)"/>
+  <!-- Graduates (stylized) -->
+  <!-- Graduate 1 -->
+  <g>
+    <circle cx="150" cy="250" r="30" fill="#f4a460"/>
+    <polygon points="140,270 160,270 155,310 145,310" fill="#000080"/>
+    <polygon points="140,270 160,270 155,300 145,300" fill="#ffffff"/>
+    <path d="M 140 310 L 130 350" stroke="#f4a460" stroke-width="8"/>
+    <path d="M 160 310 L 170 350" stroke="#f4a460" stroke-width="8"/>
+    <!-- Cap -->
+    <path d="M 130 220 Q 150 210 170 220 L 165 225 Q 150 220 135 225 Z" fill="#000080"/>
+    <line x1="150" y1="225" x2="170" y2="210" stroke="#ffd700" stroke-width="2"/>
+  </g>
+  <!-- Graduate 2 -->
+  <g>
+    <circle cx="350" cy="260" r="32" fill="#f5deb3"/>
+    <polygon points="340,280 360,280 355,320 345,320" fill="#000080"/>
+    <polygon points="340,280 360,280 355,310 345,310" fill="#ffffff"/>
+    <path d="M 340 320 L 330 360" stroke="#f5deb3" stroke-width="8"/>
+    <path d="M 360 320 L 370 360" stroke="#f5deb3" stroke-width="8"/>
+    <!-- Cap -->
+    <path d="M 330 225 Q 350 215 370 225 L 364 230 Q 350 225 336 230 Z" fill="#000080"/>
+    <line x1="350" y1="230" x2="370" y2="210" stroke="#ffd700" stroke-width="2"/>
+  </g>
+  <!-- Graduate 3 -->
+  <g>
+    <circle cx="550" cy="240" r="28" fill="#daa3b5"/>
+    <polygon points="542,260 558,260 554,300 546,300" fill="#000080"/>
+    <polygon points="542,260 558,260 554,290 546,290" fill="#ffffff"/>
+    <path d="M 542 300 L 532 340" stroke="#daa3b5" stroke-width="8"/>
+    <path d="M 558 300 L 568 340" stroke="#daa3b5" stroke-width="8"/>
+    <!-- Cap -->
+    <path d="M 532 210 Q 550 200 568 210 L 562 215 Q 550 210 538 215 Z" fill="#000080"/>
+    <line x1="550" y1="215" x2="570" y2="190" stroke="#ffd700" stroke-width="2"/>
+  </g>
+  <!-- Diploma/Certificate -->
+  <g id="diploma">
+    <rect x="200" y="320" width="80" height="50" fill="#fff9e6" stroke="#d4af37" stroke-width="2"/>
+    <circle cx="240" cy="345" r="8" fill="#d4af37"/>
+    <path d="M 220 330 Q 240 340 260 330" fill="none" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  <use href="#diploma" x="150" y="0"/>
+  <use href="#diploma" x="300" y="0"/>
+  <!-- Trophy -->
+  <g>
+    <path d="M 670 280 Q 660 260 660 240 Q 660 220 680 220 Q 700 220 700 240 Q 700 260 690 280 Z" fill="#ffd700" stroke="#daa520" stroke-width="2"/>
+    <!-- Trophy handles -->
+    <path d="M 660 240 Q 640 250 640 270" fill="none" stroke="#ffd700" stroke-width="8"/>
+    <path d="M 700 240 Q 720 250 720 270" fill="none" stroke="#ffd700" stroke-width="8"/>
+    <!-- Trophy base -->
+    <rect x="665" y="280" width="30" height="20" fill="#daa520" stroke="#8b7355" stroke-width="1"/>
+    <ellipse cx="680" cy="300" rx="25" ry="8" fill="#d4af37" stroke="#8b7355" stroke-width="1"/>
+    <!-- Star on trophy -->
+    <polygon points="680,240 683,250 693,250 686,257 689,267 680,260 671,267 674,257 667,250 677,250" fill="#ff6b6b"/>
+  </g>
+  <!-- Balloons -->
+  <g id="balloon">
+    <circle cx="100" cy="80" r="12" fill="#ff6b6b" opacity="0.8"/>
+    <line x1="100" y1="92" x2="100" y2="150" stroke="#333" stroke-width="1"/>
+  </g>
+  <use href="#balloon" x="100" y="0"/>
+  <use href="#balloon" x="250" y="20"/>
+  <use href="#balloon" x="400" y="0"/>
+  <use href="#balloon" x="550" y="30"/>
+  <use href="#balloon" x="700" y="0"/>
+  <!-- Text -->
+  <text x="400" y="450" font-size="36" font-weight="bold" text-anchor="middle" fill="#2c3e50">Congratulations!</text>
+</svg>

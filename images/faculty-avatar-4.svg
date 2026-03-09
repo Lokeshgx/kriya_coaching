@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="prof4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;"/>
+      <stop offset="100%" style="stop-color:#7c3aed;"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <circle cx="150" cy="150" r="150" fill="url(#prof4)"/>
+  <!-- Head -->
+  <circle cx="150" cy="92" r="43" fill="#fdc5c0"/>
+  <!-- Hair (long, wavy) -->
+  <path d="M 110 70 Q 100 85 105 120 L 105 140 Q 115 150 150 155 Q 185 150 195 140 L 195 120 Q 200 85 190 70 Q 170 55 150 55 Q 130 55 110 70 Z" fill="#4b3520"/>
+  <!-- Face highlights -->
+  <ellipse cx="145" cy="105" rx="12" ry="8" fill="#fde5e0" opacity="0.6"/>
+  <!-- Eyes -->
+  <circle cx="135" cy="88" r="4" fill="#1f2937"/>
+  <circle cx="165" cy="88" r="4" fill="#1f2937"/>
+  <circle cx="137" cy="86" r="1.5" fill="#ffffff"/>
+  <circle cx="167" cy="86" r="1.5" fill="#ffffff"/>
+  <!-- Eyebrows -->
+  <path d="M 128 75 Q 135 72 142 74" fill="none" stroke="#4b3520" stroke-width="2"/>
+  <path d="M 158 74 Q 165 72 172 75" fill="none" stroke="#4b3520" stroke-width="2"/>
+  <!-- Nose -->
+  <path d="M 150 88 L 150 102" stroke="#d4a5a0" stroke-width="1.5"/>
+  <!-- Lips -->
+  <ellipse cx="150" cy="112" rx="8" ry="5" fill="#f08080"/>
+  <!-- Body (formal shirt) -->
+  <rect x="105" y="140" width="90" height="95" fill="#8b5cf6" rx="8"/>
+  <!-- Collar -->
+  <polygon points="130,140 145,155 150,150 155,155 170,140" fill="#ffffff"/>
+  <!-- Arms -->
+  <ellipse cx="100" cy="170" rx="20" ry="50" fill="#fdc5c0"/>
+  <ellipse cx="200" cy="170" rx="20" ry="50" fill="#fdc5c0"/>
+</svg>

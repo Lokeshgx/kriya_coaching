@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our Services - Kriya Coaching Classes">
+    
+    <title>Services - Kriya Coaching Classes</title>
+    
+    <!-- ===== COMMON CDN & EXTERNAL LIBRARIES (from base.html) ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- ===== COMMON CUSTOM CSS (from base.html) ===== -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
+    <!-- ===== PAGE-SPECIFIC CSS ===== -->
+    <link rel="stylesheet" href="../css/services.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <main id="main-content">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="breadcrumb-section">
+            <div class="container-custom">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Services</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- Services Section -->
+        <section class="services-page-section">
+            <div class="container-custom">
+                <div class="section-header">
+                    <span class="section-subtitle">What We Offer</span>
+                    <h1>Our Services</h1>
+                    <p>Comprehensive educational solutions tailored to your needs</p>
+                </div>
+
+                <!-- Filter/Tab Section -->
+                <div class="filter-section mb-5" data-aos="fade-up">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="*">All Services</button>
+                        <button class="filter-btn" data-filter="courses">Courses</button>
+                        <button class="filter-btn" data-filter="training">Training</button>
+                        <button class="filter-btn" data-filter="short-courses">Short Courses</button>
+                        <button class="filter-btn" data-filter="workshops">Workshops</button>
+                        <button class="filter-btn" data-filter="scholarship">Scholarship</button>
+                        <button class="filter-btn" data-filter="mental-health">Mental Health</button>
+                        <button class="filter-btn" data-filter="nios">NIOS</button>
+                    </div>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="services-grid">
+                    <!-- Service 1: Regular Courses -->
+                    <div class="service-item" data-category="courses" data-aos="fade-up">
+                        <div class="service-card-detailed">
+                            <div class="service-icon-large">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Regular Courses</h3>
+                                <p>Comprehensive courses designed for CBSE, ICSE, and State Board students covering all subjects with expert faculty guidance and personalized attention.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Expert Faculty</li>
+                                    <li><i class="fas fa-check"></i> Small Batch Sizes</li>
+                                    <li><i class="fas fa-check"></i> Monthly Tests</li>
+                                    <li><i class="fas fa-check"></i> Doubt Clearing Sessions</li>
+                                </ul>
+                                <a href="service-description.html?type=courses" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Training Programs -->
+                    <div class="service-item" data-category="training" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card-detailed">
+                            <div class="service-icon-large success">
+                                <i class="fas fa-chalkboard-user"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Training Programs</h3>
+                                <p>Specialized intensive training for competitive exams including JEE Main, JEE Advanced, NEET, UPSC with proven success strategies and updated syllabus.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Updated Curriculum</li>
+                                    <li><i class="fas fa-check"></i> Mock Tests</li>
+                                    <li><i class="fas fa-check"></i> Personalized Coaching</li>
+                                    <li><i class="fas fa-check"></i> Study Materials</li>
+                                </ul>
+                                <a href="service-description.html?type=training" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Short Courses -->
+                    <div class="service-item" data-category="short-courses" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card-detailed">
+                            <div class="service-icon-large warning">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Short Courses</h3>
+                                <p>Intensive short-term programs for specific topics, quick revisions, and last-minute preparations designed for quick skill enhancement.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Flexible Duration</li>
+                                    <li><i class="fas fa-check"></i> Focused Learning</li>
+                                    <li><i class="fas fa-check"></i> Affordable Fees</li>
+                                    <li><i class="fas fa-check"></i> Quick Results</li>
+                                </ul>
+                                <a href="service-description.html?type=short-courses" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Events & Workshops -->
+                    <div class="service-item" data-category="workshops" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-card-detailed">
+                            <div class="service-icon-large info">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Events & Workshops</h3>
+                                <p>Interactive seminars, webinars, and hands-on workshops on exam strategies, personality development, and academic excellence.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Expert Speakers</li>
+                                    <li><i class="fas fa-check"></i> Interactive Sessions</li>
+                                    <li><i class="fas fa-check"></i> Networking</li>
+                                    <li><i class="fas fa-check"></i> Certificates</li>
+                                </ul>
+                                <a href="service-description.html?type=workshops" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Scholarship Programs -->
+                    <div class="service-item" data-category="scholarship" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-card-detailed">
+                            <div class="service-icon-large danger">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Scholarship Programs</h3>
+                                <p>Merit-based and need-based scholarships to support talented and deserving students in pursuing their academic goals.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Merit Scholarships</li>
+                                    <li><i class="fas fa-check"></i> Need-based Aid</li>
+                                    <li><i class="fas fa-check"></i> Easy Application</li>
+                                    <li><i class="fas fa-check"></i> Monthly Disbursement</li>
+                                </ul>
+                                <a href="service-description.html?type=scholarship" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Mental Health Support -->
+                    <div class="service-item" data-category="mental-health" data-aos="fade-up" data-aos-delay="500">
+                        <div class="service-card-detailed">
+                            <div class="service-icon-large primary">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Mental Health</h3>
+                                <p>Comprehensive counseling services, stress management sessions, and holistic wellness programs for student mental health.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Professional Counselors</li>
+                                    <li><i class="fas fa-check"></i> Stress Management</li>
+                                    <li><i class="fas fa-check"></i> Confidential Sessions</li>
+                                    <li><i class="fas fa-check"></i> Support Groups</li>
+                                </ul>
+                                <a href="service-description.html?type=mental-health" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 7: NIOS Preparation -->
+                    <div class="service-item" data-category="nios" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service-card-detailed">
+                            <div class="service-icon-large secondary">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>NIOS Preparation</h3>
+                                <p>Complete NIOS exam preparation with study material, revision classes, and practice tests for various streams and subjects.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Complete Syllabus</li>
+                                    <li><i class="fas fa-check"></i> Practice Tests</li>
+                                    <li><i class="fas fa-check"></i> Study Materials</li>
+                                    <li><i class="fas fa-check"></i> Revision Classes</li>
+                                </ul>
+                                <a href="service-description.html?type=nios" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="container-custom">
+                <div class="cta-content" data-aos="fade-up">
+                    <h2>Ready to Transform Your Learning?</h2>
+                    <p>Join thousands of students who have achieved academic excellence with Kriya Coaching Classes</p>
+                    <a href="../index.html#enquiry-section" class="btn btn-primary btn-lg">Enquire Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- ===== COMMON SCRIPTS & LIBRARIES (from base.html) ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/header.js"></script>
+    
+    <!-- ===== PAGE-SPECIFIC SCRIPTS ===== -->
+    <script src="../js/services.js"></script>
+    <script src="../js/footer.js"></script>
+
+</body>
+</html>

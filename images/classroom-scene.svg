@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="classroomSky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb;"/>
+      <stop offset="100%" style="stop-color:#e0f6ff;"/>
+    </linearGradient>
+    <linearGradient id="classroomWall" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff9e6;"/>
+      <stop offset="100%" style="stop-color:#ffebcc;"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer background -->
+  <rect width="800" height="500" fill="url(#classroomSky)"/>
+  <!-- Building -->
+  <rect x="100" y="120" width="600" height="330" fill="url(#classroomWall)" stroke="#8b7355" stroke-width="3"/>
+  <!-- Roof -->
+  <polygon points="100,120 400,20 700,120" fill="#c1463b"/>
+  <!-- Door -->
+  <rect x="360" y="340" width="80" height="110" fill="#8b5a3c" stroke="#5c3a25" stroke-width="2"/>
+  <circle cx="435" cy="395" r="5" fill="#ffd700"/>
+  <!-- Windows -->
+  <g id="window">
+    <rect x="150" y="180" width="60" height="60" fill="#87ceeb" stroke="#8b7355" stroke-width="2"/>
+    <line x1="180" y1="180" x2="180" y2="240" stroke="#8b7355" stroke-width="2"/>
+    <line x1="150" y1="210" x2="210" y2="210" stroke="#8b7355" stroke-width="2"/>
+  </g>
+  <!-- More windows -->
+  <use href="#window" x="100" y="0"/>
+  <use href="#window" x="200" y="0"/>
+  <use href="#window" x="300" y="0"/>
+  <!-- Board inside (visible through window) -->
+  <rect x="380" y="200" width="120" height="80" fill="#2d5016" stroke="#000" stroke-width="2"/>
+  <line x1="385" y1="210" x2="495" y2="210" stroke="#ffffff" stroke-width="1"/>
+  <line x1="385" y1="220" x2="495" y2="220" stroke="#ffffff" stroke-width="1"/>
+  <line x1="385" y1="230" x2="495" y2="230" stroke="#ffffff" stroke-width="1"/>
+  <line x1="385" y1="240" x2="495" y2="240" stroke="#ffffff" stroke-width="1"/>
+  <line x1="385" y1="250" x2="495" y2="250" stroke="#ffffff" stroke-width="1"/>
+  <line x1="385" y1="260" x2="495" y2="260" stroke="#ffffff" stroke-width="1"/>
+  <!-- Desk/Students (stylized) -->
+  <rect x="320" y="290" width="40" height="30" fill="#8b5a3c"/>
+  <circle cx="335" cy="275" r="15" fill="#f4a460"/>
+  <rect x="400" y="295" width="40" height="30" fill="#8b5a3c"/>
+  <circle cx="415" cy="280" r="15" fill="#f5deb3"/>
+  <!-- Flagpole -->
+  <rect x="680" y="80" width="6" height="60" fill="#8b4513"/>
+  <!-- Flag -->
+  <rect x="686" y="85" width="40" height="25" fill="#ff6b6b"/>
+  <circle cx="710" cy="97" r="3" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="prof2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;"/>
+      <stop offset="100%" style="stop-color:#059669;"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <circle cx="150" cy="150" r="150" fill="url(#prof2)"/>
+  <!-- Head -->
+  <circle cx="150" cy="90" r="45" fill="#fdbcb4"/>
+  <!-- Hair (longer, curly) -->
+  <ellipse cx="150" cy="50" rx="50" ry="35" fill="#6b4423"/>
+  <circle cx="120" cy="65" r="18" fill="#6b4423"/>
+  <circle cx="180" cy="65" r="18" fill="#6b4423"/>
+  <!-- Eyes -->
+  <circle cx="135" cy="85" r="4" fill="#1f2937"/>
+  <circle cx="165" cy="85" r="4" fill="#1f2937"/>
+  <!-- Eyebrows -->
+  <path d="M 130 75 Q 135 72 140 75" fill="none" stroke="#1f2937" stroke-width="2"/>
+  <path d="M 160 75 Q 165 72 170 75" fill="none" stroke="#1f2937" stroke-width="2"/>
+  <!-- Nose -->
+  <line x1="150" y1="85" x2="150" y2="100" stroke="#1f2937" stroke-width="2"/>
+  <!-- Smile -->
+  <path d="M 135 107 Q 150 117 165 107" fill="none" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+  <!-- Body -->
+  <rect x="110" y="140" width="80" height="100" fill="#10b981" rx="10"/>
+  <!-- Shirt detail -->
+  <circle cx="150" cy="165" r="8" fill="#059669"/>
+  <!-- Arms -->
+  <rect x="85" y="155" width="25" height="70" fill="#fdbcb4" rx="12"/>
+  <rect x="190" y="155" width="25" height="70" fill="#fdbcb4" rx="12"/>
+</svg>

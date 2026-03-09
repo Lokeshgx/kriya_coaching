@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="prof3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;"/>
+      <stop offset="100%" style="stop-color:#d97706;"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <circle cx="150" cy="150" r="150" fill="url(#prof3)"/>
+  <!-- Head -->
+  <circle cx="150" cy="95" r="42" fill="#f4a582"/>
+  <!-- Hair (short, spiky) -->
+  <ellipse cx="150" cy="55" rx="48" ry="30" fill="#1f2937"/>
+  <path d="M 120 65 L 115 45" fill="none" stroke="#1f2937" stroke-width="4"/>
+  <path d="M 150 50 L 150 30" fill="none" stroke="#1f2937" stroke-width="4"/>
+  <path d="M 180 65 L 185 45" fill="none" stroke="#1f2937" stroke-width="4"/>
+  <!-- Eyes -->
+  <circle cx="135" cy="90" r="3.5" fill="#1f2937"/>
+  <circle cx="165" cy="90" r="3.5" fill="#1f2937"/>
+  <circle cx="137" cy="88" r="2" fill="#ffffff"/>
+  <circle cx="167" cy="88" r="2" fill="#ffffff"/>
+  <!-- Eyebrows -->
+  <path d="M 125 78 Q 135 75 143 78" fill="none" stroke="#1f2937" stroke-width="2"/>
+  <path d="M 157 78 Q 165 75 175 78" fill="none" stroke="#1f2937" stroke-width="2"/>
+  <!-- Nose -->
+  <path d="M 150 90 L 148 105" stroke="#1f2937" stroke-width="1.5"/>
+  <!-- Mouth -->
+  <path d="M 140 110 Q 150 115 160 110" fill="none" stroke="#1f2937" stroke-width="2"/>
+  <!-- Body (lab coat) -->
+  <path d="M 115 145 Q 110 160 115 240 L 185 240 Q 190 160 185 145 Z" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+  <!-- Lab coat buttons -->
+  <circle cx="150" cy="170" r="3" fill="#1f2937"/>
+  <circle cx="150" cy="195" r="3" fill="#1f2937"/>
+  <circle cx="150" cy="220" r="3" fill="#1f2937"/>
+  <!-- Arms -->
+  <rect x="85" y="160" width="30" height="60" fill="#f4a582" rx="15"/>
+  <rect x="185" y="160" width="30" height="60" fill="#f4a582" rx="15"/>
+</svg>

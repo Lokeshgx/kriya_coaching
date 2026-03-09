@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Courses - Kriya Coaching Classes">
+    
+    <title>Courses - Kriya Coaching Classes</title>
+    
+    <!-- ===== COMMON CDN & EXTERNAL LIBRARIES (from base.html) ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- ===== COMMON CUSTOM CSS (from base.html) ===== -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
+    <!-- ===== PAGE-SPECIFIC CSS ===== -->
+    <link rel="stylesheet" href="../css/courses.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <main id="main-content">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="breadcrumb-section">
+            <div class="container-custom">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Courses</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- Courses Section -->
+        <section class="courses-page-section">
+            <div class="container-custom">
+                <div class="section-header">
+                    <span class="section-subtitle">Comprehensive Learning</span>
+                    <h1>Our Courses</h1>
+                    <p>Explore our wide range of courses designed for different academic levels and competencies</p>
+                </div>
+
+                <!-- Course Filter -->
+                <div class="course-filter mb-5" data-aos="fade-up">
+                    <div class="filter-row">
+                        <div class="filter-group">
+                            <label>Select Board:</label>
+                            <select id="boardFilter" class="form-select">
+                                <option value="">All Boards</option>
+                                <option value="cbse">CBSE</option>
+                                <option value="icse">ICSE</option>
+                                <option value="state">State Board</option>
+                                <option value="competitive">Competitive Exams</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label>Select Class:</label>
+                            <select id="classFilter" class="form-select">
+                                <option value="">All Classes</option>
+                                <option value="class-9">Class 9</option>
+                                <option value="class-10">Class 10</option>
+                                <option value="class-11">Class 11</option>
+                                <option value="class-12">Class 12</option>
+                                <option value="post-12">Post 12</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Courses Grid -->
+                <div class="courses-grid">
+                    <!-- Course 1 -->
+                    <div class="course-card" data-board="cbse" data-class="class-10" data-aos="fade-up">
+                        <div class="course-header" style="background: linear-gradient(135deg, #2563eb, #1e40af);">
+                            <div class="course-category"><i class="fas fa-book-open"></i> CBSE Class 10</div>
+                            <h3>Science & Mathematics</h3>
+                        </div>
+                        <div class="course-body">
+                            <p>Complete coverage of Science (Physics, Chemistry, Biology) and Mathematics for CBSE Class 10 board exams.</p>
+                            <div class="course-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>12 Months</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Batch: 10-15</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>₹15,000</span>
+                                </div>
+                            </div>
+                            <ul class="course-features">
+                                <li><i class="fas fa-check"></i> Weekly Tests</li>
+                                <li><i class="fas fa-check"></i> Study Materials</li>
+                                <li><i class="fas fa-check"></i> Doubt Classes</li>
+                                <li><i class="fas fa-check"></i> Board Guidance</li>
+                            </ul>
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 2 -->
+                    <div class="course-card" data-board="cbse" data-class="class-12" data-aos="fade-up" data-aos-delay="100">
+                        <div class="course-header" style="background: linear-gradient(135deg, #10b981, #059669);">
+                            <div class="course-category"><i class="fas fa-book-open"></i> CBSE Class 12</div>
+                            <h3>Science Stream</h3>
+                        </div>
+                        <div class="course-body">
+                            <p>Advanced Science courses for CBSE Class 12 including PCM/PCB with competitive exam preparation.</p>
+                            <div class="course-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>12 Months</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Batch: 8-12</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>₹20,000</span>
+                                </div>
+                            </div>
+                            <ul class="course-features">
+                                <li><i class="fas fa-check"></i> Board & Competitive</li>
+                                <li><i class="fas fa-check"></i> Mock Tests</li>
+                                <li><i class="fas fa-check"></i> Faculty Support</li>
+                                <li><i class="fas fa-check"></i> Performance Tracking</li>
+                            </ul>
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 3 -->
+                    <div class="course-card" data-board="competitive" data-class="post-12" data-aos="fade-up" data-aos-delay="200">
+                        <div class="course-header" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+                            <div class="course-category"><i class="fas fa-book-open"></i> Competitive</div>
+                            <h3>JEE Main & Advanced</h3>
+                        </div>
+                        <div class="course-body">
+                            <p>Comprehensive JEE preparation course with updated curriculum, mock tests, and expert guidance from IIT alumni.</p>
+                            <div class="course-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>18 Months</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Batch: 6-10</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>₹40,000</span>
+                                </div>
+                            </div>
+                            <ul class="course-features">
+                                <li><i class="fas fa-check"></i> Intensive Training</li>
+                                <li><i class="fas fa-check"></i> Weekly Full Tests</li>
+                                <li><i class="fas fa-check"></i> Doubt Solving</li>
+                                <li><i class="fas fa-check"></i> IIT Alumni Faculty</li>
+                            </ul>
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 4 -->
+                    <div class="course-card" data-board="competitive" data-class="post-12" data-aos="fade-up" data-aos-delay="300">
+                        <div class="course-header" style="background: linear-gradient(135deg, #ef4444, #dc2626);">
+                            <div class="course-category"><i class="fas fa-book-open"></i> Competitive</div>
+                            <h3>NEET Preparation</h3>
+                        </div>
+                        <div class="course-body">
+                            <p>Complete NEET preparation with expert biology, chemistry & physics coaching from experienced medical entrance specialists.</p>
+                            <div class="course-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>18 Months</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Batch: 8-12</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>₹35,000</span>
+                                </div>
+                            </div>
+                            <ul class="course-features">
+                                <li><i class="fas fa-check"></i> Focused Coaching</li>
+                                <li><i class="fas fa-check"></i> Practice Cases</li>
+                                <li><i class="fas fa-check"></i> Regular Assessments</li>
+                                <li><i class="fas fa-check"></i> Medical Counseling</li>
+                            </ul>
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 5 -->
+                    <div class="course-card" data-board="state" data-class="class-10" data-aos="fade-up" data-aos-delay="400">
+                        <div class="course-header" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9);">
+                            <div class="course-category"><i class="fas fa-book-open"></i> State Board</div>
+                            <h3>State Board Class 10</h3>
+                        </div>
+                        <div class="course-body">
+                            <p>Comprehensive State Board Class 10 preparation with focus on local curriculum and board exam patterns.</p>
+                            <div class="course-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>12 Months</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Batch: 12-15</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>₹12,000</span>
+                                </div>
+                            </div>
+                            <ul class="course-features">
+                                <li><i class="fas fa-check"></i> Curriculum Aligned</li>
+                                <li><i class="fas fa-check"></i> Board Pattern</li>
+                                <li><i class="fas fa-check"></i> Question Bank</li>
+                                <li><i class="fas fa-check"></i> Sample Papers</li>
+                            </ul>
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 6 -->
+                    <div class="course-card" data-board="icse" data-class="class-12" data-aos="fade-up" data-aos-delay="500">
+                        <div class="course-header" style="background: linear-gradient(135deg, #ec4899, #be185d);">
+                            <div class="course-category"><i class="fas fa-book-open"></i> ICSE</div>
+                            <h3>ICSE Class 12</h3>
+                        </div>
+                        <div class="course-body">
+                            <p>Complete ICSE Class 12 course covering all subjects with emphasis on conceptual clarity and detailed explanation.</p>
+                            <div class="course-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>12 Months</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Batch: 8-12</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>₹22,000</span>
+                                </div>
+                            </div>
+                            <ul class="course-features">
+                                <li><i class="fas fa-check"></i> ICSE Syllabus</li>
+                                <li><i class="fas fa-check"></i> Board Exams</li>
+                                <li><i class="fas fa-check"></i> Mock Tests</li>
+                                <li><i class="fas fa-check"></i> Result Guarantee</li>
+                            </ul>
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="courses-cta">
+            <div class="container-custom text-center"  data-aos="fade-up">
+                <h2>Still Confused About Which Course?</h2>
+                <p>Contact our counselors to get personalized course recommendations</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">Contact Counselor</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Enroll Modal -->
+    <div class="modal fade" id="enrollModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Enroll in Course</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>To complete your enrollment, please fill the enquiry form on our contact page.</p>
+                    <a href="../index.html#enquiry-section" class="btn btn-primary w-100">Go to Enquiry Form</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- ===== COMMON SCRIPTS & LIBRARIES (from base.html) ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/header.js"></script>
+    
+    <!-- ===== PAGE-SPECIFIC SCRIPTS ===== -->
+    <script src="../js/courses.js"></script>
+    <script src="../js/footer.js"></script>
+
+</body>
+</html>

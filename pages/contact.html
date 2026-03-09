@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Us - Kriya Coaching Classes">
+    
+    <title>Contact Us - Kriya Coaching Classes</title>
+    
+    <!-- ===== COMMON CDN & EXTERNAL LIBRARIES (from base.html) ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- ===== COMMON CUSTOM CSS (from base.html) ===== -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
+    <!-- ===== PAGE-SPECIFIC CSS (contact.html) ===== -->
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <main id="main-content">
+        <nav aria-label="breadcrumb" class="breadcrumb-section">
+            <div class="container-custom">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Contact Us</li>
+                </ol>
+            </div>
+        </nav>
+
+        <section class="contact-section">
+            <div class="container-custom">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h1>Contact Us</h1>
+                    <p>We'd love to hear from you. Reach out to us with any questions or inquiries</p>
+                </div>
+
+                <!-- Contact Info Cards -->
+                <div class="contact-info-cards">
+                    <div class="info-card" data-aos="fade-up">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h5>Address</h5>
+                        <p>3rd Floor, Above Styling U Salon, Ananthapura main Road, Yelahanka, Bengaluru, Karnataka 560064, India</p>
+                    </div>
+                    <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-phone"></i>
+                        <h5>Phone</h5>
+                        <p><a href="tel:+919876543210">+91 84313 45144</a><br>
+                        <a href="tel:+919876543211">+91 98765 43211</a></p>
+                    </div>
+                    <div class="info-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-envelope"></i>
+                        <h5>Email</h5>
+                        <p><a href="mailto:info@kriya.edu">nitin@kriyacoachingclasses.com</a><br>
+                        <!-- <a href="mailto:support@kriya.edu">support@kriya.edu</a></p> --->
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="row mt-5">
+                    <div class="col-lg-8 offset-lg-2" data-aos="fade-up">
+                        <div class="contact-form" id="enquiry-form-contact">
+                            <h3 class="mb-4">Send us a Message</h3>
+                            <form id="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactName" class="form-label">Full Name *</label>
+                                        <input type="text" class="form-control" id="contactName" name="contactName" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactEmail" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactPhone" class="form-label">Phone Number *</label>
+                                        <input type="tel" class="form-control" id="contactPhone" name="contactPhone" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactSubject" class="form-label">Subject *</label>
+                                        <input type="text" class="form-control" id="contactSubject" name="contactSubject" required>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="contactMessage" class="form-label">Message *</label>
+                                    <textarea class="form-control" id="contactMessage" name="contactMessage" rows="5" placeholder="Write your message here..." required></textarea>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" id="contactTerms" name="contactTerms" required>
+                                    <label class="form-check-label" for="contactTerms">
+                                        I agree to the terms and conditions
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="map-container" data-aos="fade-up">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.85960203304134!2d77.57338226962666!3d13.114787829899814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae19c2ffb0a9db%3A0xf818974c3148684!2sKriya%20Coaching%20Classes%20%7C%20CBSE%20%26%20ICSE%20(6%E2%80%9312)%20%2B%20NEET%2FCET%20Prep!5e0!3m2!1sen!2sin!4v1772480942880!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- Office Hours -->
+                <div class="row mt-5" data-aos="fade-up">
+                    <div class="col-lg-6">
+                        <div class="info-card">
+                            <h5><i class="fas fa-clock"></i> Office Hours</h5>
+                            <p><strong>Monday - Friday:</strong> 8:00 AM - 9:00 PM<br>
+                            <strong>Saturday:</strong> 9:00 AM - 7:00 PM<br>
+                            <strong>Sunday:</strong> 10:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="info-card">
+                            <h5><i class="fas fa-headset"></i> Support</h5>
+                            <p><strong>Queries:</strong> We respond within 24 hours<br>
+                            <strong>Emergency:</strong> Call us immediately<br>
+                            <strong>Chat:</strong> Available during office hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <!-- ===== COMMON SCRIPTS & LIBRARIES (from base.html) ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/header.js"></script>
+
+    <!-- ===== PAGE-SPECIFIC SCRIPTS ===== -->
+    <script src="../js/contact.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>
