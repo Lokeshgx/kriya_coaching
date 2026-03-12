@@ -1,6 +1,8 @@
 // Contact Page JavaScript
 (function() {
     'use strict';
+
+   
     
     // Initialize contact page on DOM ready
     function initializeContactPage() {
@@ -78,3 +80,26 @@
     // Initialize on page load
     document.addEventListener('DOMContentLoaded', initializeContactPage);
 })();
+
+ function sendToWhatsapp(){
+
+        var name = document.getElementById("contactName").value;
+        var mobile = document.getElementById("contactPhone").value;
+        var email = document.getElementById("contactEmail").value;
+        var contactMessage = document.getElementById("contactMessage").value;
+
+        /* Replace with your WhatsApp number */
+        var phoneNumber = "919584326764";
+
+        var message = 
+        "New Form Submission:%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Mobile: " + mobile + "%0A" +
+        "Email: " + email + "%0A" +
+        "Message: " + contactMessage;
+
+        var whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + message;
+
+        window.open(whatsappURL, "_blank");
+
+    }

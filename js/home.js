@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeStatCounters();
     initializeEnquiryForm();
     setupCarouselAutoplay();
+    initializeStudentCarousel();
 });
 
 // Load Header from header.html
@@ -319,6 +320,110 @@ document.addEventListener('click', function(e) {
         }
     }
 });
+
+
+// Send enquiry form data on WhatsApp
+function sendToWhatsapp(){
+
+    var name = document.getElementById("fullName").value;
+    var mobile = document.getElementById("mobileNumber").value;
+    var email = document.getElementById("emailId").value;
+    var course = document.getElementById("course").value;
+    var query = document.getElementById("queryMessage").value;
+
+    /* Replace with your WhatsApp number */
+    var phoneNumber = "919584326764";
+
+    var message = 
+    "New Form Submission:%0A%0A" +
+    "Name: " + name + "%0A" +
+    "Mobile: " + mobile + "%0A" +
+    "Email: " + email + "%0A" +
+    "Course: " + course + "%0A" +
+    "Query: " + query;
+
+    var whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + message;
+
+    window.open(whatsappURL, "_blank");
+
+}
+
+// ===== STUDENT CAROUSEL FUNCTIONALITY =====
+
+function initializeStudentCarousel() {
+    const wrapper = document.querySelector('.students-carousel-wrapper');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prevBtn = document.getElementById('prevStudents');
+    const nextBtn = document.getElementById('nextStudents');
+    
+    if (!wrapper || slides.length === 0) return;
+    
+    let currentSlide = 0;
+    let autoPlayInterval;
+    const slideWidth = 100; // Each slide is 100% width
+    
+    // Update carousel position with smooth animation
+    function goToSlide(slideIndex) {
+        slides.forEach((slide, index) => {
+            slide.classList.remove('active');
+        });
+        
+        // Use transform instead of scroll for smooth animation
+        const translateValue = -slideIndex * slideWidth;
+        wrapper.style.transform = `translateX(${translateValue}%)`;
+        
+        slides[slideIndex].classList.add('active');
+    }
+    
+    // Next slide
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        goToSlide(currentSlide);
+    }
+    
+    // Previous slide
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        goToSlide(currentSlide);
+    }
+    
+    // Auto play carousel
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(nextSlide, 5000);
+    }
+    
+    // Stop auto play
+    function stopAutoPlay() {
+        clearInterval(autoPlayInterval);
+    }
+    
+    // Event listeners for buttons
+    if (prevBtn) {
+        prevBtn.addEventListener('click', function() {
+            prevSlide();
+            stopAutoPlay();
+            startAutoPlay();
+        });
+    }
+    
+    if (nextBtn) {
+        nextBtn.addEventListener('click', function() {
+            nextSlide();
+            stopAutoPlay();
+            startAutoPlay();
+        });
+    }
+    
+    // Pause on hover
+    wrapper.addEventListener('mouseenter', stopAutoPlay);
+    wrapper.addEventListener('mouseleave', startAutoPlay);
+    
+    // Initialize first slide
+    goToSlide(0);
+    
+    // Start auto play
+    startAutoPlay();
+}
 
 // Log page load
 console.log('Home page loaded successfully');
