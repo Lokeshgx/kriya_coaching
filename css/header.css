@@ -32,10 +32,10 @@
     color: var(--primary-color, #2563eb);
 }
 
-.logo-svg {
-    height: 40px;
-    width: 40px;
-    flex-shrink: 0;
+.img-logo {
+    height: 50px;
+    width: 50px;
+    margin-left: 2rem;
 }
 
 .brand-name {
@@ -235,6 +235,10 @@
         margin-top: 1rem;
         padding: 0.65rem 1rem !important;
     }
+
+    .img-logo {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 576px) {
@@ -242,10 +246,7 @@
         padding: 0.75rem 0;
     }
 
-    .logo-svg {
-        height: 32px;
-        width: 32px;
-    }
+    
 
     .brand-name {
         font-size: 1.1rem;
