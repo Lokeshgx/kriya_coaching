@@ -68,7 +68,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6 text-center carousel-image">
-                                        <img src="./images/classroom-scene.svg" alt="Students Success" class="img-fluid rounded-lg" data-aos="zoom-in" data-aos-delay="300">
+                                        <img src="./images/Advertisement.png" alt="Students Success" class="img-fluid-carousel rounded-lg" data-aos="zoom-in" data-aos-delay="300">
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +93,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6 text-center carousel-image">
-                                        <img src="./images/lab-scene.svg" alt="Exam Preparation" class="img-fluid rounded-lg">
+                                        <img src="./images/lab-scene.svg" alt="Exam Preparation" class="img-fluid-carousel rounded-lg">
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6 text-center carousel-image">
-                                        <img src="./images/workshop-scene.svg" alt="Holistic Development" class="img-fluid rounded-lg">
+                                        <img src="./images/study.jpg" alt="Holistic Development" class="img-fluid-carousel rounded-lg">
                                     </div>
                                 </div>
                             </div>
@@ -170,15 +170,6 @@
                             </div>
                         </div>
                     </div>
-                   <!--  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="stat-card">
-                            <div class="stat-icon">
-                                <i class="fas fa-award"></i>
-                            </div>
-                            <div class="stat-number" data-target="98">0</div>
-                            <div class="stat-label">Success Rate %</div>
-                        </div>
-                    </div>-->
                 </div>
             </div>
         </section>
@@ -193,10 +184,10 @@
                 </div>
 
                 <div class="row align-items-center mt-5">
-                    <div class="col-lg-6" data-aos="fade-right">
+                    <div class="col-lg-5" data-aos="fade-right">
                         <img src="./images/businessman-book-ssuccess.webp" alt="About Institute" class="img-fluid img-rounded">
                     </div>
-                    <div class="col-lg-6" data-aos="fade-left">
+                    <div class="col-lg-7" data-aos="fade-left">
                         <div class="about-content">
                             <!-- Mission -->
                             <div class="about-card mb-4">
@@ -205,7 +196,7 @@
                                 </div>
                                 <div class="about-card-content">
                                     <h4>Our Mission</h4>
-                                    <p>To empower students with comprehensive knowledge, problem-solving skills, and confidence to excel in academics and competitive examinations through personalized learning approaches.</p>
+                                    <p>At Kriya Coaching, We are committed to transform determined students into confident achievers—ready to excel in school, competitive exams, and life beyond the classroom with world-class academic mentorship, personalized growth plans, and a value-driven environment.</p>
                                 </div>
                             </div>
 
@@ -216,7 +207,9 @@
                                 </div>
                                 <div class="about-card-content">
                                     <h4>Our Vision</h4>
-                                    <p>To be the most trusted and preferred coaching class that transforms students' academic careers and creates confident, well-rounded individuals prepared for life's challenges.</p>
+                                    <p>To nurture the next generation of thinkers, leaders, and achievers by
+                                    building unshakable academic foundations and empowering each
+                                    student to discover their highest potential with discipline, passion, and purpose</p>
                                 </div>
                             </div>
 
@@ -227,7 +220,13 @@
                                 </div>
                                 <div class="about-card-content">
                                     <h4>Our Ethos</h4>
-                                    <p>We believe in personalized education, ethical practices, continuous improvement, student success, and creating a positive learning environment where every student can flourish.</p>
+                                    <p>At Kriya, we believe:</p>
+                                    <p></p>
+                                    <p>• Every student deserves mentors who are deeply committed to their growth.</p>
+                                    <p>• True education shapes not just brighter students, but stronger individuals.</p>
+                                    <p>• Discipline, resilience, and ethics are as important as marks and ranks.</p>
+                                    <p>• We stand with families who seek more than shortcuts—who seek real, lasting success.</p>
+                                    <p>• Success is built, not bought.</p>
                                 </div>
                             </div>
                         </div>
@@ -661,7 +660,7 @@
 
                 <div class="row mt-5">
                     <div class="col-lg-8 offset-lg-2" data-aos="fade-up">
-                        <form  class="enquiry-form" onsubmit="sendToWhatsapp(); return false;">  <!-- id="enquiry-form" -->
+                        <form class="enquiry-form" id="enquiry-form" onsubmit="sendToWhatsapp(); return false;">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="fullName" class="form-label">Full Name *</label>
@@ -676,25 +675,58 @@
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="emailId" class="form-label">Email ID *</label>
-                                    <input type="email" class="form-control" id="emailId" name="emailId" required>
+                                    <input type="email" class="form-control" id="emailId" name="emailId" placeholder="your@email.com" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <label for="course" class="form-label">Course of Interest *</label>
-                                    <select class="form-select" id="course" name="course" required>
-                                        <option value="">Select a course</option>
-                                        <option value="jee-main">JEE Main</option>
-                                        <option value="jee-advanced">JEE Advanced</option>
-                                        <option value="neet">NEET</option>
-                                        <option value="cbse-class-10">CBSE Class 10</option>
-                                        <option value="cbse-class-12">CBSE Class 12</option>
-                                        <option value="others">Others</option>
+                                    <label for="service" class="form-label">Service *</label>
+                                    <select class="form-select" id="service" name="service" required>
+                                        <option value="">Select a Service</option>
+                                        <option value="Academic Courses">Academic Courses</option>
+                                        <option value="Training Programs">Training Programs</option>
+                                        <option value="NIOS">NIOS</option>
+                                        <option value="Scholarship Programs">Scholarship Programs</option>
+                                        <option value="Languages (Online) - French &amp; German">Languages (Online) - French &amp; German</option>
+                                        <option value="Workshops">Workshops</option>
+                                        <option value="Career Counseling">Career Counseling</option>
+                                        <option value="Mental Health">Mental Health</option>
+                                        <option value="Nutritionists">Nutritionists</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Board + Class Row: visible only when Academic Courses is selected -->
+                            <div class="row d-none" id="board-class-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="board" class="form-label">Board *</label>
+                                    <select class="form-select" id="board" name="board">
+                                        <option value="">Select a Board</option>
+                                        <option value="CBSE">CBSE</option>
+                                        <option value="ICSE">ICSE</option>
+                                        <option value="State Board">State Board</option>
+                                        <option value="Other Courses">Other Courses</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3 d-none" id="class-col">
+                                    <label for="className" class="form-label">Class *</label>
+                                    <select class="form-select" id="className" name="className">
+                                        <option value="">Select a Class</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Subject Row: visible only when a Class is selected -->
+                            <div class="row d-none" id="subject-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="subject" class="form-label">Subject *</label>
+                                    <select class="form-select" id="subject" name="subject">
+                                        <option value="">Select a Subject</option>
                                     </select>
                                 </div>
                             </div>
 
                             <div class="mb-3">
-                                <label for="queryMessage" class="form-label">Query / Message</label>
-                                <textarea class="form-control" id="queryMessage" name="queryMessage" rows="4" placeholder="Write your question or inquiry here..."></textarea>
+                                <label for="queryMessage" class="form-label">Query / Message *</label>
+                                <textarea class="form-control" id="queryMessage" name="queryMessage" rows="4" placeholder="Write your question or inquiry here..." required></textarea>
                             </div>
 
                             <div class="form-check mb-3">
@@ -704,7 +736,7 @@
                                 </label>
                             </div>
 
-                            <button type="submit" class="btn btn-primary btn-lg w-100">Submit Enquiry</button>
+                            <button type="submit" class="btn btn-primary btn-lg w-100"><i class="fab fa-whatsapp me-2"></i>Submit Enquiry</button>
                             <p class="text-muted text-center mt-3">We'll get back to you within 24 hours</p>
                         </form>
                     </div>
