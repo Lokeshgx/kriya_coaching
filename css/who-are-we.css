@@ -1,6 +1,11 @@
 /* Who Are We Page Styles */
 .about-section {
-    padding: 5rem 0;
+    padding: 2rem 0;
+}
+
+.about-subheading{
+    margin-bottom: 1rem;
+    color: blue;
 }
 
 .value-card {
@@ -86,7 +91,3 @@
     margin: 3rem 0;
 }
 
-.breadcrumb-section {
-    background-color: var(--light-color);
-    padding: 2rem 0;
-}

@@ -38,7 +38,7 @@
     gap: 1rem;
 }
 
-#footer-container .social-icon {
+#footer-container .social-icon, .social-icon-instagram, .social-icon-youtube {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -53,6 +53,18 @@
 
 #footer-container .social-icon:hover {
     background-color: #2563eb;
+    transform: translateY(-3px);
+    color: white !important;
+}
+
+#footer-container .social-icon-instagram:hover {
+    background-color: #ff0080;
+    transform: translateY(-3px);
+    color: white !important;
+}
+
+#footer-container .social-icon-youtube:hover {
+    background-color: #dd0000;
     transform: translateY(-3px);
     color: white !important;
 }

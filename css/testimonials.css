@@ -1,4 +1,5 @@
 /* Testimonials Page Styles */
+
 .testimonials-section {
     padding: 5rem 0;
 }
@@ -68,7 +69,4 @@
     margin-top: 3rem;
 }
 
-.breadcrumb-section {
-    background-color: var(--light-color);
-    padding: 2rem 0;
-}
+

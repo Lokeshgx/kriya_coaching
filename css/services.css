@@ -1,28 +1,10 @@
 /* ===== SERVICES PAGE STYLES ===== */
 
 /* Breadcrumb Section */
-.breadcrumb-section {
-    background-color: var(--light-color);
-    padding: 2rem 0;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.breadcrumb {
-    margin-bottom: 0;
-}
-
-.breadcrumb-item.active {
-    color: var(--text-dark);
-    font-weight: 600;
-}
-
-.breadcrumb-item a {
-    color: var(--primary-color);
-}
 
 /* Services Page Section */
 .services-page-section {
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 
 /* Filter Buttons */

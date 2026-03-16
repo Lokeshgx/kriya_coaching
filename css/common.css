@@ -133,6 +133,27 @@ a:hover {
 }
 
 /* ===== CONTAINER & SECTIONS ===== */
+.breadcrumb-section {
+    background-color: var(--light-color);
+    padding: 2rem 0 0 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+}
+
+.breadcrumb-item.active {
+    color: var(--text-dark);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.breadcrumb-item a {
+    color: var(--primary-color);
+    font-style: italic;
+}
+
 .container-custom {
     max-width: 1200px;
     margin: 0 auto;

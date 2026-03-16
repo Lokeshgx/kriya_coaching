@@ -97,6 +97,12 @@
     border-radius: 6px;
 }
 
+.img-fluid-carousel {
+    max-width: 70%;
+    max-height: 40%;
+}
+
+
 /* Stats Section */
 .stats-section {
     background: linear-gradient(135deg, #115435 0%, #115435 100%);
@@ -154,7 +160,7 @@
 
 .about-card {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.2rem;
     padding: 1.5rem;
     background: white;
     border-radius: 0.75rem;
@@ -169,15 +175,15 @@
 }
 
 .about-card-icon {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 1.75rem;
+    font-size: 1.4rem;
     flex-shrink: 0;
 }
 
