@@ -52,60 +52,98 @@
                     <div class="info-card" data-aos="fade-up" data-aos-delay="100">
                         <i class="fas fa-phone"></i>
                         <h5>Phone</h5>
-                        <p><a href="tel:+919876543210">+91 84313 45144</a><br>
-                        <a href="tel:+919876543211">+91 98765 43211</a></p>
+                        <p><a href="tel:+918431345144">+91 84313 45144</a></p>
                     </div>
                     <div class="info-card" data-aos="fade-up" data-aos-delay="200">
                         <i class="fas fa-envelope"></i>
                         <h5>Email</h5>
-                        <p><a href="mailto:info@kriya.edu">nitin@kriyacoachingclasses.com</a><br>
-                        <!-- <a href="mailto:support@kriya.edu">support@kriya.edu</a></p> --->
+                        <p><a href="mailto:nitin@kriyacoachingclasses.com">nitin@kriyacoachingclasses.com</a></p>
                     </div>
                 </div>
 
                 <!-- Contact Form -->
                 <div class="row mt-5">
                     <div class="col-lg-8 offset-lg-2" data-aos="fade-up">
-                        <div class="contact-form" id="enquiry-form-contact">
-                            <h3 class="mb-4">Send us a Message</h3>
-                            <form onsubmit="sendToWhatsapp(); return false;" >  <!--id="contact-form"---->
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="contactName" class="form-label">Full Name *</label>
-                                        <input type="text" class="form-control" id="contactName" name="contactName" required>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="contactEmail" class="form-label">Email Address *</label>
-                                        <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
-                                    </div>
-                                </div>
+                        <form class="enquiry-form" id="enquiry-form" onsubmit="sendToWhatsapp(); return false;" novalidate>
+                            <h3 class="mb-4">Enquiry Form</h3>
+                            <p class="text-muted mb-4">Fill this form and our team will contact you with relevant course information</p>
 
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="contactPhone" class="form-label">Phone Number *</label>
-                                        <input type="tel" class="form-control" id="contactPhone" name="contactPhone" required>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="contactSubject" class="form-label">Subject *</label>
-                                        <input type="text" class="form-control" id="contactSubject" name="contactSubject" required>
-                                    </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="fullName" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" id="fullName" name="fullName" required>
                                 </div>
-
-                                <div class="mb-3">
-                                    <label for="contactMessage" class="form-label">Message *</label>
-                                    <textarea class="form-control" id="contactMessage" name="contactMessage" rows="5" placeholder="Write your message here..." required></textarea>
+                                <div class="col-md-6 mb-3">
+                                    <label for="mobileNumber" class="form-label">Mobile Number *</label>
+                                    <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber" placeholder="10 digit number" required>
                                 </div>
+                            </div>
 
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" id="contactTerms" name="contactTerms" required>
-                                    <label class="form-check-label" for="contactTerms">
-                                        I agree to the terms and conditions
-                                    </label>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="emailId" class="form-label">Email ID *</label>
+                                    <input type="email" class="form-control" id="emailId" name="emailId" placeholder="your@email.com" required>
                                 </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="service" class="form-label">Service *</label>
+                                    <select class="form-select" id="service" name="service" required>
+                                        <option value="">Select a Service</option>
+                                        <option value="Academic Courses">Academic Courses</option>
+                                        <option value="Training Programs">Training Programs</option>
+                                        <option value="NIOS">NIOS</option>
+                                        <option value="Scholarship Programs">Scholarship Programs</option>
+                                        <option value="Languages (Online) - French &amp; German">Languages (Online) - French &amp; German</option>
+                                        <option value="Workshops">Workshops</option>
+                                        <option value="Career Counseling">Career Counseling</option>
+                                        <option value="Mental Health">Mental Health</option>
+                                        <option value="Nutritionists">Nutritionists</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                                <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
-                            </form>
-                        </div>
+                            <div class="row d-none" id="board-class-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="board" class="form-label">Board *</label>
+                                    <select class="form-select" id="board" name="board">
+                                        <option value="">Select a Board</option>
+                                        <option value="CBSE">CBSE</option>
+                                        <option value="ICSE">ICSE</option>
+                                        <option value="State Board">State Board</option>
+                                        <option value="Other Courses">Other Courses</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3 d-none" id="class-col">
+                                    <label for="className" class="form-label">Class *</label>
+                                    <select class="form-select" id="className" name="className">
+                                        <option value="">Select a Class</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row d-none" id="subject-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="subject" class="form-label">Subject *</label>
+                                    <select class="form-select" id="subject" name="subject">
+                                        <option value="">Select a Subject</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="queryMessage" class="form-label">Query / Message *</label>
+                                <textarea class="form-control" id="queryMessage" name="queryMessage" rows="4" placeholder="Write your question or inquiry here..." required></textarea>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
+                                <label class="form-check-label" for="terms">
+                                    I agree to be contacted by Kriya Coaching Classes
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg w-100"><i class="fab fa-whatsapp me-2"></i>Submit Enquiry</button>
+                            <p class="text-muted text-center mt-3">We'll get back to you within 24 hours</p>
+                        </form>
                     </div>
                 </div>
 
