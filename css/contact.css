@@ -38,29 +38,52 @@
     font-weight: 600;
 }
 
-.contact-form {
+.contact-form,
+.enquiry-form {
     background: white;
     padding: 3rem;
     border-radius: 1rem;
     box-shadow: var(--shadow-lg);
 }
 
-.form-label {
+.form-label,
+.enquiry-form .form-label {
     font-weight: 600;
     color: var(--text-dark);
 }
 
 .form-control,
-.form-select {
+.form-select,
+.enquiry-form .form-control,
+.enquiry-form .form-select {
     border: 1px solid var(--border-color);
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
 }
 
 .form-control:focus,
-.form-select:focus {
+.form-select:focus,
+.enquiry-form .form-control:focus,
+.enquiry-form .form-select:focus {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.enquiry-form .form-check-label {
+    color: var(--text-light);
+    margin-left: 0.5rem;
+}
+
+.enquiry-form button {
+    font-weight: 600;
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.enquiry-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
 }
 
 .map-container {
@@ -68,5 +91,21 @@
     overflow: hidden;
     box-shadow: var(--shadow-lg);
     margin: 3rem 0;
+}
+
+@media (max-width: 768px) {
+    .enquiry-form {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .enquiry-form {
+        padding: 1.5rem;
+    }
+
+    .enquiry-form .form-label {
+        font-size: 0.85rem;
+    }
 }
 
