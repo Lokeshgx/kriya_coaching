@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scholarship Details - Kriya Coaching Classes">
+    <title>Scholarship Details - Kriya Coaching Classes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/scholarship-detail.css">
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <main id="main-content">
+        <nav aria-label="breadcrumb" class="breadcrumb-section">
+            <div class="container-custom">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="scholarship.html">Scholarships</a></li>
+                    <li class="breadcrumb-item active" id="detail-breadcrumb">Scholarship Detail</li>
+                </ol>
+            </div>
+        </nav>
+
+        <section class="scholarship-detail-hero py-5">
+            <div class="container-custom">
+                <div class="row align-items-center">
+                    <div class="col-lg-7" data-aos="fade-right">
+                        <span class="section-subtitle" id="detail-subtitle">Scholarship Program</span>
+                        <h1 id="detail-title">Scholarship Name</h1>
+                        <p id="detail-description">Scholarship overview and short summary will appear here.</p>
+                        <a href="scholarship.html#scholarship-list" class="btn btn-outline btn-lg mt-3">Explore Other Scholarships</a>
+                    </div>
+                    <div class="col-lg-5 text-center" data-aos="fade-left">
+                        <div class="detail-hero-image">
+                            <img id="detail-hero-img" src="../images/faculty-avatar-1.svg" alt="Scholarship Visual">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="scholarship-detail-content pb-5">
+            <div class="container-custom">
+                <div class="row gy-5">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <div class="detail-section">
+                            <h2>About This Scholarship</h2>
+                            <p id="detail-about">Details about the scholarship will appear here.</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>About the Benefactor</h2>
+                            <div class="benefactor-card">
+                                <div class="benefactor-image">
+                                    <img id="benefactor-image" src="../images/faculty-avatar-2.svg" alt="Benefactor">
+                                </div>
+                                <div class="benefactor-content">
+                                    <h3 id="benefactor-name">Mr. Nitin Saxena</h3>
+                                    <p id="benefactor-bio">A leader in education with a passion for supporting young scholars.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>Eligibility Criteria</h2>
+                            <ul id="detail-eligibility"></ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>Selection Process</h2>
+                            <p id="detail-process">Selection steps will appear here.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="fade-left">
+                        <div class="info-box mb-4">
+                            <h4>Program Snapshot</h4>
+                            <p><strong>Type:</strong> <span id="detail-type">Merit Scholarship</span></p>
+                            <p><strong>Coverage:</strong> <span id="detail-coverage">Full Tuition</span></p>
+                            <p><strong>Duration:</strong> <span id="detail-duration">One Academic Year</span></p>
+                        </div>
+
+                        <div class="image-grid">
+                            <div class="image-item"><img id="detail-image-1" src="../images/faculty-avatar-3.svg" alt="Scholarship image 1"></div>
+                            <div class="image-item"><img id="detail-image-2" src="../images/faculty-avatar-4.svg" alt="Scholarship image 2"></div>
+                            <div class="image-item"><img id="detail-image-3" src="../images/faculty-avatar-5.svg" alt="Scholarship image 3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/scholarship-detail.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>
