@@ -1,0 +1,454 @@
+/* Scholarship Page Styles */
+
+.scholarship-hero-section {
+    position: relative;
+    min-height: 440px;
+    background: linear-gradient(135deg, rgba(37,99,235,0.8), rgba(56,189,248,0.7)), url('../images/graduation-scene.svg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 0;
+}
+
+.scholarship-hero-section .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15,23,42,0.35);
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-copy h2 {
+    color: white;
+    font-size: clamp(2.5rem, 4vw, 3rem);
+    line-height: 1.05;
+}
+
+.hero-copy p {
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 520px;
+    margin-top: 1.5rem;
+    line-height: 1.8;
+}
+
+.hero-copy .btn {
+    margin-top: 1.5rem;
+}
+
+.hero-profile {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 320px;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.scholarship-list-section {
+    padding-top: 5rem;
+}
+
+.scholarship-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+#scholarshipList {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.scholarship-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: var(--shadow-sm);
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 0;
+    align-items: start;
+}
+
+.scholarship-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-lg);
+    animation: cardPulse 0.6s ease-in-out;
+}
+
+@keyframes cardPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.95; }
+}
+
+/* Color schemes for each card */
+/* Card 1 - Priya Iyer - Purple Theme */
+.scholarship-card:nth-child(1) {
+    background: linear-gradient(135deg, #f3e5f5 0%, #ede7f6 100%);
+    border-color: #b39ddb;
+}
+
+.scholarship-card:nth-child(1) .card-content h3 {
+    color: #6a1b9a;
+}
+
+.scholarship-card:nth-child(1) .link-more {
+    color: #6a1b9a;
+}
+
+.scholarship-card:nth-child(1):hover {
+    border-color: #6a1b9a;
+    background: linear-gradient(135deg, #e1bee7 0%, #d1c4e9 100%);
+}
+
+.scholarship-card:nth-child(1):hover .card-content h3 {
+    color: #4a0e78;
+}
+
+/* Card 2 - Kamala Saxena - Blue Theme */
+.scholarship-card:nth-child(2) {
+    background: linear-gradient(135deg, #e3f2fd 0%, #e8eaf6 100%);
+    border-color: #64b5f6;
+}
+
+.scholarship-card:nth-child(2) .card-content h3 {
+    color: #1565c0;
+}
+
+.scholarship-card:nth-child(2) .link-more {
+    color: #1565c0;
+}
+
+.scholarship-card:nth-child(2):hover {
+    border-color: #1565c0;
+    background: linear-gradient(135deg, #bbdefb 0%, #c5cae9 100%);
+}
+
+.scholarship-card:nth-child(2):hover .card-content h3 {
+    color: #0d47a1;
+}
+
+/* Card 3 - Abha Saxena - Pink Theme */
+.scholarship-card:nth-child(3) {
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+    border-color: #f48fb1;
+}
+
+.scholarship-card:nth-child(3) .card-content h3 {
+    color: #c2185b;
+}
+
+.scholarship-card:nth-child(3) .link-more {
+    color: #c2185b;
+}
+
+.scholarship-card:nth-child(3):hover {
+    border-color: #c2185b;
+    background: linear-gradient(135deg, #f8bbd0 0%, #f5a7c1 100%);
+}
+
+.scholarship-card:nth-child(3):hover .card-content h3 {
+    color: #880e4f;
+}
+
+/* Card 4 - Manju Saxena - Green Theme */
+.scholarship-card:nth-child(4) {
+    background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+    border-color: #81c784;
+}
+
+.scholarship-card:nth-child(4) .card-content h3 {
+    color: #2e7d32;
+}
+
+.scholarship-card:nth-child(4) .link-more {
+    color: #2e7d32;
+}
+
+.scholarship-card:nth-child(4):hover {
+    border-color: #2e7d32;
+    background: linear-gradient(135deg, #c8e6c9 0%, #dcedc8 100%);
+}
+
+.scholarship-card:nth-child(4):hover .card-content h3 {
+    color: #1b5e20;
+}
+
+/* Card 5 - Sanjeev Kumar - Orange Theme */
+.scholarship-card:nth-child(5) {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border-color: #ffb74d;
+}
+
+.scholarship-card:nth-child(5) .card-content h3 {
+    color: #e65100;
+}
+
+.scholarship-card:nth-child(5) .link-more {
+    color: #e65100;
+}
+
+.scholarship-card:nth-child(5):hover {
+    border-color: #e65100;
+    background: linear-gradient(135deg, #ffe0b2 0%, #ffd699 100%);
+}
+
+.scholarship-card:nth-child(5):hover .card-content h3 {
+    color: #bf360c;
+}
+
+.scholarship-card:nth-child(1) .card-content p {
+    color: #7b1fa2;
+}
+
+.scholarship-card:nth-child(1):hover .card-content p {
+    color: #6a1b9a;
+}
+
+.scholarship-card:nth-child(2) .card-content p {
+    color: #0d47a1;
+}
+
+.scholarship-card:nth-child(2):hover .card-content p {
+    color: #0a3d91;
+}
+
+.scholarship-card:nth-child(3) .card-content p {
+    color: #ad1457;
+}
+
+.scholarship-card:nth-child(3):hover .card-content p {
+    color: #880e4f;
+}
+
+.scholarship-card:nth-child(4) .card-content p {
+    color: #1b5e20;
+}
+
+.scholarship-card:nth-child(4):hover .card-content p {
+    color: #1a4d1a;
+}
+
+.scholarship-card:nth-child(5) .card-content p {
+    color: #e65100;
+}
+
+.scholarship-card:nth-child(5):hover .card-content p {
+    color: #bf360c;
+}
+
+/* Alternate layout: text-left = text first (left), image second (right) */
+.scholarship-card[data-layout="text-left"] {
+    grid-template-columns: 7fr 3fr;
+}
+
+.scholarship-card[data-layout="text-left"] .card-content {
+    order: 1;
+}
+
+.scholarship-card[data-layout="text-left"] .card-image {
+    order: 2;
+}
+
+/* Alternate layout: text-right = image first (left), text second (right) */
+.scholarship-card[data-layout="text-right"] {
+    grid-template-columns: 3fr 7fr;
+}
+
+.scholarship-card[data-layout="text-right"] .card-content {
+    order: 2;
+}
+
+.scholarship-card[data-layout="text-right"] .card-image {
+    order: 1;
+}
+
+.card-image {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+}
+
+.card-image img {
+    width: auto;
+    height: auto;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: var(--shadow-sm);
+    object-fit: cover;
+    display: block;
+    justify-content: center;
+}
+
+.card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-content h3 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.card-content p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.75;
+}
+
+.link-more {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.link-more:hover {
+    text-decoration: underline;
+}
+
+.testimonial-section {
+    padding-top: 5rem;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 1.5rem;
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.testimonial-card p {
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.author-photo {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 2px solid var(--primary-color);
+}
+
+.author-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-info strong {
+    display: block;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.author-info span {
+    color: var(--text-light);
+}
+
+.faq-section {
+    padding-top: 5rem;
+}
+
+.faq-accordion .accordion-item {
+    border-radius: 1.25rem;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.faq-accordion .accordion-button {
+    background: var(--light-color);
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.faq-accordion .accordion-body {
+    background: white;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+@media (max-width: 767px) {
+    .scholarship-hero-section {
+        min-height: 620px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .hero-profile {
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .profile-card {
+        max-width: 100%;
+    }
+
+    /* Mobile responsive: stack cards vertically */
+    .scholarship-card {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .scholarship-card[data-layout="text-left"] .card-content {
+        order: 2;
+    }
+
+    .scholarship-card[data-layout="text-left"] .card-image {
+        order: 1;
+    }
+
+    .scholarship-card[data-layout="text-right"] .card-content {
+        order: 2;
+    }
+
+    .scholarship-card[data-layout="text-right"] .card-image {
+        order: 1;
+    }
+
+    .card-content {
+        padding: 1.5rem;
+    }
+}

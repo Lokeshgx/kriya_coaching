@@ -15,6 +15,7 @@
     z-index: 1;
 }
 
+
 .carousel-title {
     font-size: 3.5rem;
     font-weight: 700;
@@ -51,6 +52,13 @@
 .carousel-image img {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
+}
+
+.carousel-image-1 img{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
 }
 
 /* Carousel Controls */
@@ -97,8 +105,18 @@
     border-radius: 6px;
 }
 
-.img-fluid-carousel {
-    max-width: 70%;
+.img-fluid-carousel-1 {
+    max-width: 120%;
+    max-height: 100%;
+}
+
+.img-fluid-carousel-2 {
+    max-width: 60%;
+    max-height: 40%;
+}
+
+.img-fluid-carousel-3 {
+    max-width: 120%;
     max-height: 40%;
 }
 
