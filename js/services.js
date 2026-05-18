@@ -76,19 +76,18 @@ function filterItems(items, filter) {
         const category = item.getAttribute('data-category');
         
         if (filter === '*' || category === filter) {
-            item.style.display = 'block';
-            // Re-trigger animation
-            setTimeout(() => {
-                item.style.opacity = '1';
-            }, 10);
+            item.classList.remove('hidden');
+            item.style.opacity = '1';
         } else {
-            item.style.display = 'none';
+            item.classList.add('hidden');
             item.style.opacity = '0';
         }
     });
 
     // Reinitialize AOS for newly visible items
-    AOS.refresh();
+    if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+    }
 }
 
 // Initialize AOS

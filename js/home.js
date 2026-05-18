@@ -348,6 +348,12 @@ function sendToWhatsapp() {
         return;
     }
 
+    const termsAccepted = document.getElementById('terms');
+    if (!termsAccepted || !termsAccepted.checked) {
+        showNotification('Please accept the consent checkbox to continue', 'danger');
+        return;
+    }
+
     // Validate visible cascading dropdowns
     const boardClassRow = document.getElementById('board-class-row');
     if (boardClassRow && !boardClassRow.classList.contains('d-none')) {

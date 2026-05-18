@@ -18,7 +18,10 @@ function loadHeader() {
                 headerContainer.innerHTML = html;
                 setActiveNavLink();
             })
-            .catch(error => console.error('Error loading header:', error));
+            .catch(error => {
+                console.error('Error loading header:', error);
+                showNotification('Failed to load navigation. Please refresh the page.', 'error');
+            });
     }
 }
 
@@ -34,7 +37,10 @@ function loadFooter() {
                 if (typeof AOS !== 'undefined') {
                     AOS.refresh();
                 }            })
-            .catch(error => console.error('Error loading footer:', error));
+            .catch(error => {
+                console.error('Error loading footer:', error);
+                showNotification('Failed to load footer. Some features may not work.', 'error');
+            });
     }
 }
 
