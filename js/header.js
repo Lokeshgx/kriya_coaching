@@ -55,4 +55,28 @@ document.addEventListener('DOMContentLoaded', function() {
     setActiveNavLink();
     setupMobileMenuClose();
     setupNavbarScrollEffect();
+    adjustHeaderOffset();
+});
+
+// Adjust header position based on top-notice height so they don't overlap
+function adjustHeaderOffset() {
+    const topNotice = document.querySelector('.top-notice');
+    const navbar = document.querySelector('.navbar-wrapper');
+    const topHeight = topNotice ? topNotice.offsetHeight : 0;
+    const navHeight = navbar ? navbar.offsetHeight : 0;
+
+    // Set CSS variables for any CSS that relies on them
+    document.documentElement.style.setProperty('--topbar-height', topHeight + 'px');
+    document.documentElement.style.setProperty('--navbar-height', navHeight + 'px');
+
+    // Update body padding so content begins after top-notice + navbar
+    document.body.style.paddingTop = (topHeight + navHeight) + 'px';
+}
+
+// Recompute on window load and resize (debounced)
+window.addEventListener('load', adjustHeaderOffset);
+let __hdrResizeTimer = null;
+window.addEventListener('resize', function() {
+    clearTimeout(__hdrResizeTimer);
+    __hdrResizeTimer = setTimeout(adjustHeaderOffset, 120);
 });
