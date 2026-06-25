@@ -1,0 +1,115 @@
+/* Mental Health page styles */
+
+.mental-hero-section {
+    padding: 4rem 0;
+}
+
+.mental-hero-section h1 {
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.mental-hero-section .lead {
+    color: var(--text-light);
+}
+
+.content-block {
+    background: white;
+    padding: 1.75rem;
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.check-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.check-list li {
+    padding: 0.5rem 0;
+}
+
+.counselor-card .counselor-photo img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* Redesigned counselor card */
+.counselor-card {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+    border-left: 4px solid rgba(108,99,255,0.12);
+}
+
+.counselor-photo {
+    flex: 0 0 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counselor-photo img {
+    width: 140px;
+    height: 140px;
+    border-radius: 12px;
+    object-fit: contain;
+    background: #f8fafc;
+    padding: 6px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.counselor-info {
+    flex: 1 1 auto;
+}
+
+.counselor-info h4 {
+    margin: 0 0 6px 0;
+    font-size: 1.125rem;
+}
+
+.counselor-info .muted {
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.counselor-info p.description {
+    margin: 0;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.process-steps {
+    padding-left: 1.2rem;
+}
+
+.package-box, .facts-box {
+    background: white;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.package-item {
+    border-bottom: 1px dashed rgba(0,0,0,0.06);
+    padding: 0.6rem 0;
+}
+
+@media (max-width: 768px) {
+    .counselor-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.25rem;
+    }
+    .counselor-card .counselor-photo img {
+        width: 160px;
+        height: 160px;
+    }
+    .counselor-info p.description { margin-top: 0.75rem; }
+}
