@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="100%" height="100%" fill="#F3F4F6"/>
+  <g transform="translate(50,30)">
+    <rect x="0" y="0" width="300" height="300" rx="18" fill="#ffffff" stroke="#E5E7EB"/>
+    <circle cx="150" cy="110" r="70" fill="#6C63FF"/>
+    <rect x="60" y="200" width="180" height="24" rx="12" fill="#EDE9FE"/>
+    <rect x="80" y="240" width="140" height="14" rx="7" fill="#F3F4F6"/>
+    <text x="150" y="280" font-size="18" font-family="Poppins, Arial, sans-serif" fill="#111827" text-anchor="middle">Dr. Nitin</text>
+  </g>
+</svg>

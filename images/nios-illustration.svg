@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e6f0ff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <g transform="translate(150,120)">
+    <rect x="0" y="0" width="900" height="560" rx="20" fill="#fff" stroke="#e6eefc" stroke-width="2"/>
+    <g transform="translate(40,40)">
+      <circle cx="80" cy="80" r="70" fill="#0d6efd" opacity="0.12"/>
+      <g transform="translate(40,40)">
+        <path d="M10 60 L40 10 L70 60 Z" fill="#0d6efd"/>
+        <rect x="20" y="62" width="40" height="18" rx="3" fill="#0d6efd"/>
+      </g>
+      <text x="180" y="80" font-family="Poppins, sans-serif" font-size="36" fill="#0b2b4a" font-weight="600">NIOS - Open Schooling</text>
+      <text x="180" y="120" font-family="Inter, sans-serif" font-size="18" fill="#375a7f">Flexible secondary and senior secondary certification</text>
+
+      <g transform="translate(0,170)">
+        <rect x="0" y="0" width="760" height="260" rx="10" fill="#f8fbff" stroke="#e6eefc"/>
+        <text x="24" y="40" font-family="Inter, sans-serif" font-size="20" fill="#0b2b4a" font-weight="600">How NIOS helps learners</text>
+        <text x="24" y="80" font-family="Inter, sans-serif" font-size="16" fill="#2d4b66">• Flexible exam schedules and multiple attempts</text>
+        <text x="24" y="110" font-family="Inter, sans-serif" font-size="16" fill="#2d4b66">• Wide subject choice and vocational courses</text>
+        <text x="24" y="140" font-family="Inter, sans-serif" font-size="16" fill="#2d4b66">• Accessible for working students and adult learners</text>
+      </g>
+    </g>
+  </g>
+</svg>
